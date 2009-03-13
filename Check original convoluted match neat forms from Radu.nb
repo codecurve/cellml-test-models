@@ -1,0 +1,216 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      5409,        207]
+NotebookOptionsPosition[      4432,        170]
+NotebookOutlinePosition[      4874,        187]
+CellTagsIndexPosition[      4831,        184]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+
+Trying to confirm that verbose expressions in my e-mail match up with neat \
+ones in Radu Serban's e-mail.\
+\>", "Text",
+ CellChangeTimes->{{3.44589380399*^9, 3.445893845451*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"FullSimplify", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"1", "/", "4"}], " ", 
+     RowBox[{"(", 
+      RowBox[{"2", "+", 
+       RowBox[{"Sqrt", "[", 
+        RowBox[{"8", "+", 
+         RowBox[{"4", " ", 
+          SqrtBox["2"], " ", "t"}], "+", 
+         SuperscriptBox["t", "2"]}], "]"}]}], ")"}]}], ",", 
+    RowBox[{"t", ">", "0"}]}], "]"}], "\n"}]], "Input",
+ CellChangeTimes->{{3.445893426565*^9, 3.445893459085*^9}, 
+   3.4458935209779997`*^9, 3.445893784361*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", "4"], " ", 
+  RowBox[{"(", 
+   RowBox[{"2", "+", 
+    RowBox[{"2", " ", 
+     SqrtBox["2"]}], "+", "t"}], ")"}]}]], "Output",
+ CellChangeTimes->{3.445893459352*^9, 3.445893521429*^9, 3.445893608024*^9, 
+  3.445893784652*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FullSimplify", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"1", "/", "4"}], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "2"}], "+", 
+      RowBox[{"Sqrt", "[", 
+       RowBox[{"8", "+", 
+        RowBox[{"4", " ", 
+         SqrtBox["2"], " ", "t"}], "+", 
+        SuperscriptBox["t", "2"]}], "]"}]}], ")"}]}], ",", 
+   RowBox[{"t", ">", "0"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", "4"], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", "2"}], "+", 
+    RowBox[{"2", " ", 
+     SqrtBox["2"]}], "+", "t"}], ")"}]}]], "Output",
+ CellChangeTimes->{3.4458937863859997`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", "t_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"t", "/", "2"}], "+", 
+   SqrtBox["2"]}]}]], "Input",
+ CellChangeTimes->{{3.445893556488*^9, 3.4458935826870003`*^9}, {
+  3.445893615637*^9, 3.445893647528*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FullSimplify", "[", 
+  RowBox[{
+   RowBox[{
+    SuperscriptBox[
+     RowBox[{"f", "[", "t", "]"}], "2"], "-", "1"}], ",", 
+   RowBox[{"t", ">", "0"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.445893556488*^9, 3.4458935826870003`*^9}, {
+  3.445893615637*^9, 3.4458936862869997`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"1", "+", 
+  RowBox[{
+   SqrtBox["2"], " ", "t"}], "+", 
+  FractionBox[
+   SuperscriptBox["t", "2"], "4"]}]], "Output",
+ CellChangeTimes->{{3.445893670711*^9, 3.44589368669*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FullSimplify", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"f", "[", "t", "]"}], "/", "2"}], "+", 
+    RowBox[{"1", "/", "2"}]}], ",", 
+   RowBox[{"t", ">", "0"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.445893556488*^9, 3.4458935826870003`*^9}, {
+  3.445893615637*^9, 3.4458936513599997`*^9}, {3.4458937073199997`*^9, 
+  3.445893726532*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", "4"], " ", 
+  RowBox[{"(", 
+   RowBox[{"2", "+", 
+    RowBox[{"2", " ", 
+     SqrtBox["2"]}], "+", "t"}], ")"}]}]], "Output",
+ CellChangeTimes->{3.4458937268970003`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FullSimplify", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"f", "[", "t", "]"}], "/", "2"}], "-", 
+    RowBox[{"1", "/", "2"}]}], ",", 
+   RowBox[{"t", ">", "0"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.445893556488*^9, 3.4458935826870003`*^9}, {
+  3.445893615637*^9, 3.445893665376*^9}, {3.445893731627*^9, 
+  3.445893749442*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", "4"], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", "2"}], "+", 
+    RowBox[{"2", " ", 
+     SqrtBox["2"]}], "+", "t"}], ")"}]}]], "Output",
+ CellChangeTimes->{{3.44589374006*^9, 3.44589374979*^9}}]
+}, Open  ]],
+
+Cell["\<\
+
+Indeed, it seems they actually do match.\
+\>", "Text",
+ CellChangeTimes->{{3.445893905665*^9, 3.445893919638*^9}}]
+},
+WindowSize->{1898, 1067},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification:>FEPrivate`If[
+  FEPrivate`Equal[FEPrivate`$VersionNumber, 6.], 2., 2. Inherited],
+FrontEndVersion->"7.0 for Microsoft Windows (32-bit) (November 10, 2008)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[545, 20, 190, 5, 88, "Text"],
+Cell[CellGroupData[{
+Cell[760, 29, 510, 15, 109, "Input"],
+Cell[1273, 46, 267, 8, 104, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1577, 59, 395, 13, 73, "Input"],
+Cell[1975, 74, 232, 8, 104, "Output"]
+}, Open  ]],
+Cell[2222, 85, 247, 7, 65, "Input"],
+Cell[CellGroupData[{
+Cell[2494, 96, 306, 8, 64, "Input"],
+Cell[2803, 106, 201, 6, 109, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3041, 117, 378, 10, 57, "Input"],
+Cell[3422, 129, 212, 7, 104, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3671, 141, 368, 10, 57, "Input"],
+Cell[4042, 153, 246, 8, 104, "Output"]
+}, Open  ]],
+Cell[4303, 164, 125, 4, 88, "Text"]
+}
+]
+*)
+
+(* End of internal cache information *)
