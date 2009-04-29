@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<model 
+    xmlns="http://www.cellml.org/cellml/1.1#" 
+    xmlns:cmeta="http://www.cellml.org/metadata/1.0#" 
+    cmeta:id="VerySimpleDAE_jumps_between_solutions" 
+    name="VerySimpleDAE_jumps_between_solutions">
+
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <rdf:Description rdf:about="#VerySimpleDAE_jumps_between_solutions">
+      <sh:solverHint xmlns:sh="http://www.cellml.org/metadata/simulation/solverhints/1.0#" rdf:parseType="Resource">
+        <sh:initialValue>-10</sh:initialValue>
+        <sh:degree>0</sh:degree>
+        <sh:variable rdf:resource="#d"/>
+      </sh:solverHint>
+    </rdf:Description>
+  </rdf:RDF>
+
+  <component name="c1">
+    <variable initial_value="0" name="x" units="dimensionless"/>
+    <variable initial_value="10" name="y" units="dimensionless"/>
+    <variable cmeta:id="d" name="d" units="dimensionless"/>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" id="A">
+      <apply id="A1">
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>y</ci>
+        </apply>
+        <ci>x</ci>
+      </apply>
+      <apply id="A2">
+        <eq/>
+        <apply>
+          <diff/>
+          <bvar>
+            <ci>t</ci>
+          </bvar>
+          <ci>x</ci>
+        </apply>
+        <ci>d</ci>
+      </apply>
+      <apply id="A3">
+        <eq/>
+        <apply>
+          <times/>
+          <apply>
+            <minus/>
+            <ci>d</ci>
+            <cn>5</cn>
+          </apply>
+          <apply>
+            <plus/>
+            <ci>d</ci>
+            <ci>y</ci>
+          </apply>
+        </apply>
+        <cn>0</cn>
+      </apply>
+    </math>
+    <variable name="t" units="dimensionless"/>
+  </component>
+</model>
