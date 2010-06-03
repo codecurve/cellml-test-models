@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <model xmlns="http://www.cellml.org/cellml/1.1#"
 	xmlns:cmeta="http://www.cellml.org/metadata/1.0#"
-	xml:base="file:///C:/Users/rbri053/Randall/Now/eclipseWorkspace1/DAEs/SimpleDAE_NonLinear4.cellml"
-	cmeta:id="SimpleDAE_NonLinear4">
+	cmeta:id="SimpleDAE_NonLinear4"
+	name="SimpleDAE_NonLinear4">
 	<component name="environment">
 		<variable name="t" public_interface="out" units="dimensionless" />
 		<variable initial_value="1e-10" name="epsilon"
@@ -42,7 +42,7 @@
 		<map_variables variable_1="t" variable_2="t" />
 		<map_variables variable_1="amplitude" variable_2="amplitude" />
 	</connection>
-	<component name="compare4_3 with analytical solution">
+	<component name="compare4_3_with_analytical_solution">
 		<variable name="x_error" public_interface="out"
 			units="dimensionless" />
 		<variable name="y_error" public_interface="out"
@@ -89,13 +89,13 @@
 	</component>
 	<connection>
 		<map_components component_1="main1"
-			component_2="compare4_3 with analytical solution" />
+			component_2="compare4_3_with_analytical_solution" />
 		<map_variables variable_1="x" variable_2="x_analytical" />
 		<map_variables variable_1="y" variable_2="y_analytical" />
 	</connection>
 	<connection>
 		<map_components component_1="main3"
-			component_2="compare4_3 with analytical solution" />
+			component_2="compare4_3_with_analytical_solution" />
 		<map_variables variable_1="x" variable_2="x" />
 		<map_variables variable_1="y" variable_2="y" />
 	</connection>
@@ -110,12 +110,12 @@
 	</connection>
 	<connection>
 		<map_components component_1="Radius1"
-			component_2="compare4_3 with analytical solution" />
+			component_2="compare4_3_with_analytical_solution" />
 		<map_variables variable_1="r" variable_2="r" />
 	</connection>
 	<connection>
 		<map_components
-			component_1="compare4_3 with analytical solution"
+			component_1="compare4_3_with_analytical_solution"
 			component_2="environment" />
 		<map_variables variable_1="amplitude" variable_2="amplitude" />
 	</connection>
