@@ -4,7 +4,7 @@
 		<variable name="t" public_interface="out" units="dimensionless" />
 		<variable initial_value="1e-10" name="epsilon" public_interface="out" units="dimensionless" />
 		<variable initial_value="5" name="amplitude" public_interface="out" units="dimensionless" />
-		<variable initial_value="0.78" name="initial_t" public_interface="out" units="dimensionless" />
+		<variable initial_value="0" name="initial_t" public_interface="out" units="dimensionless" />
 	</component>
 	<import xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="SimpleDAE_NonLinear4_2.cellml">
 		<component component_ref="main" name="main2" />
