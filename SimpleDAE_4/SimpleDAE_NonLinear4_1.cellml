@@ -15,6 +15,7 @@
 		<variable name="x" public_interface="out" units="dimensionless" />
 		<variable name="t" public_interface="in" units="dimensionless" />
 		<variable name="amplitude" public_interface="in" units="dimensionless" />
+        <variable name="dummy" initial_value="1" units="dimensionless" />
 		<math xmlns="http://www.w3.org/1998/Math/MathML" id="3.1">
 			<apply id="3.1.1">
 				<eq />
@@ -52,7 +53,6 @@
 				<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#" cellml:units="dimensionless">1</cn>
 			</apply>
 		</math>
-		<variable name="dummy" units="dimensionless" />
 	</component>
 
 </model>
