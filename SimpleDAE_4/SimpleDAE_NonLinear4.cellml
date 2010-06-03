@@ -1,19 +1,12 @@
 <?xml version="1.0"?>
-<model xmlns="http://www.cellml.org/cellml/1.1#"
-	xmlns:cmeta="http://www.cellml.org/metadata/1.0#"
-	cmeta:id="SimpleDAE_NonLinear4"
-	name="SimpleDAE_NonLinear4">
+<model xmlns="http://www.cellml.org/cellml/1.1#" xmlns:cmeta="http://www.cellml.org/metadata/1.0#" cmeta:id="SimpleDAE_NonLinear4" name="SimpleDAE_NonLinear4">
 	<component name="environment">
 		<variable name="t" public_interface="out" units="dimensionless" />
-		<variable initial_value="1e-10" name="epsilon"
-			public_interface="out" units="dimensionless" />
-		<variable initial_value="5" name="amplitude"
-			public_interface="out" units="dimensionless" />
-		<variable initial_value="0.78" name="initial_t"
-			public_interface="out" units="dimensionless" />
+		<variable initial_value="1e-10" name="epsilon" public_interface="out" units="dimensionless" />
+		<variable initial_value="5" name="amplitude" public_interface="out" units="dimensionless" />
+		<variable initial_value="0.78" name="initial_t" public_interface="out" units="dimensionless" />
 	</component>
-	<import xmlns:xlink="http://www.w3.org/1999/xlink"
-		xlink:href="SimpleDAE_NonLinear4_2.cellml">
+	<import xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="SimpleDAE_NonLinear4_2.cellml">
 		<component component_ref="main" name="main2" />
 	</import>
 	<connection>
@@ -22,8 +15,7 @@
 		<map_variables variable_1="amplitude" variable_2="amplitude" />
 		<map_variables variable_1="initial_t" variable_2="initial_t" />
 	</connection>
-	<import xmlns:xlink="http://www.w3.org/1999/xlink"
-		xlink:href="SimpleDAE_NonLinear4_3.cellml">
+	<import xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="SimpleDAE_NonLinear4_3.cellml">
 		<component component_ref="main" name="main3" />
 	</import>
 	<connection>
@@ -33,8 +25,7 @@
 		<map_variables variable_1="amplitude" variable_2="amplitude" />
 		<map_variables variable_1="initial_t" variable_2="initial_t" />
 	</connection>
-	<import xmlns:xlink="http://www.w3.org/1999/xlink"
-		xlink:href="SimpleDAE_NonLinear4_1.cellml">
+	<import xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="SimpleDAE_NonLinear4_1.cellml">
 		<component component_ref="main" name="main1" />
 	</import>
 	<connection>
@@ -43,10 +34,8 @@
 		<map_variables variable_1="amplitude" variable_2="amplitude" />
 	</connection>
 	<component name="compare4_3_with_analytical_solution">
-		<variable name="x_error" public_interface="out"
-			units="dimensionless" />
-		<variable name="y_error" public_interface="out"
-			units="dimensionless" />
+		<variable name="x_error" public_interface="out" units="dimensionless" />
+		<variable name="y_error" public_interface="out" units="dimensionless" />
 		<math xmlns="http://www.w3.org/1998/Math/MathML" id="E3">
 			<apply id="E3.1">
 				<eq />
@@ -76,31 +65,25 @@
 				</apply>
 			</apply>
 		</math>
-		<variable name="x_analytical" public_interface="in"
-			units="dimensionless" />
-		<variable name="y_analytical" public_interface="in"
-			units="dimensionless" />
+		<variable name="x_analytical" public_interface="in" units="dimensionless" />
+		<variable name="y_analytical" public_interface="in" units="dimensionless" />
 		<variable name="x" public_interface="in" units="dimensionless" />
 		<variable name="y" public_interface="in" units="dimensionless" />
 		<variable name="r" public_interface="in" units="dimensionless" />
 		<variable name="r_error" units="dimensionless" />
-		<variable name="amplitude" public_interface="in"
-			units="dimensionless" />
+		<variable name="amplitude" public_interface="in" units="dimensionless" />
 	</component>
 	<connection>
-		<map_components component_1="main1"
-			component_2="compare4_3_with_analytical_solution" />
+		<map_components component_1="main1" component_2="compare4_3_with_analytical_solution" />
 		<map_variables variable_1="x" variable_2="x_analytical" />
 		<map_variables variable_1="y" variable_2="y_analytical" />
 	</connection>
 	<connection>
-		<map_components component_1="main3"
-			component_2="compare4_3_with_analytical_solution" />
+		<map_components component_1="main3" component_2="compare4_3_with_analytical_solution" />
 		<map_variables variable_1="x" variable_2="x" />
 		<map_variables variable_1="y" variable_2="y" />
 	</connection>
-	<import xmlns:xlink="http://www.w3.org/1999/xlink"
-		xlink:href="Radius.cellml">
+	<import xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="Radius.cellml">
 		<component component_ref="Radius" name="Radius1" />
 	</import>
 	<connection>
@@ -109,36 +92,24 @@
 		<map_variables variable_1="y" variable_2="y" />
 	</connection>
 	<connection>
-		<map_components component_1="Radius1"
-			component_2="compare4_3_with_analytical_solution" />
+		<map_components component_1="Radius1" component_2="compare4_3_with_analytical_solution" />
 		<map_variables variable_1="r" variable_2="r" />
 	</connection>
 	<connection>
-		<map_components
-			component_1="compare4_3_with_analytical_solution"
-			component_2="environment" />
+		<map_components component_1="compare4_3_with_analytical_solution" component_2="environment" />
 		<map_variables variable_1="amplitude" variable_2="amplitude" />
 	</connection>
 	<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-		<RDF:Description
-			xmlns:NS1="http://www.cellml.org/metadata/simulation/1.0#"
-			RDF:about="rdf:#$fwhYP2" NS1:endingValue="600"
-			NS1:nonstandard-algorithm="am112" NS1:startingValue="0.78" />
-		<RDF:Description
-			RDF:about="file:///C:/Users/rbri053/Randall/Now/eclipseWorkspace1/DAEs/SimpleDAE_NonLinear4.cellml#SimpleDAE_NonLinear4">
-			<NS1:simulation
-				xmlns:NS1="http://www.cellml.org/metadata/simulation/1.0#"
-				RDF:resource="rdf:#$dwhYP2" />
+		<RDF:Description xmlns:NS1="http://www.cellml.org/metadata/simulation/1.0#" RDF:about="rdf:#$fwhYP2" NS1:endingValue="600" NS1:nonstandard-algorithm="am112" NS1:startingValue="0.78" />
+		<RDF:Description RDF:about="file:///C:/Users/rbri053/Randall/Now/eclipseWorkspace1/DAEs/SimpleDAE_NonLinear4.cellml#SimpleDAE_NonLinear4">
+			<NS1:simulation xmlns:NS1="http://www.cellml.org/metadata/simulation/1.0#" RDF:resource="rdf:#$dwhYP2" />
 		</RDF:Description>
 		<RDF:Description RDF:about="rdf:#$dwhYP2">
-			<NS1:boundIntervals
-				xmlns:NS1="http://www.cellml.org/metadata/simulation/1.0#"
-				RDF:resource="rdf:#$ewhYP2" />
+			<NS1:boundIntervals xmlns:NS1="http://www.cellml.org/metadata/simulation/1.0#" RDF:resource="rdf:#$ewhYP2" />
 		</RDF:Description>
 		<RDF:Description RDF:about="rdf:#$ewhYP2">
 			<RDF:first RDF:resource="rdf:#$fwhYP2" />
-			<RDF:rest
-				RDF:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil" />
+			<RDF:rest RDF:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil" />
 		</RDF:Description>
 	</RDF:RDF>
 </model>

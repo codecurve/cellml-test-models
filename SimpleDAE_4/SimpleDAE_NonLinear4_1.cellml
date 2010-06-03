@@ -2,10 +2,8 @@
 <model xmlns="http://www.cellml.org/cellml/1.1#" name="SimpleDAE_NonLinear4_1">
 	<component name="environment">
 		<variable name="t" public_interface="out" units="dimensionless" />
-		<variable initial_value="5" name="amplitude"
-			public_interface="out" units="dimensionless" />
-		<variable initial_value="0.78" name="initial_t"
-			public_interface="out" units="dimensionless" />
+		<variable initial_value="5" name="amplitude" public_interface="out" units="dimensionless" />
+		<variable initial_value="0.78" name="initial_t" public_interface="out" units="dimensionless" />
 	</component>
 	<connection>
 		<map_components component_1="environment" component_2="main" />
@@ -51,8 +49,7 @@
 					</bvar>
 					<ci>dummy</ci>
 				</apply>
-				<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#"
-					cellml:units="dimensionless">1</cn>
+				<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#" cellml:units="dimensionless">1</cn>
 			</apply>
 		</math>
 		<variable name="dummy" units="dimensionless" />

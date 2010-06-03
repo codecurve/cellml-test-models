@@ -15,14 +15,12 @@
 						<apply>
 							<power />
 							<ci>x</ci>
-							<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#"
-                    cellml:units="dimensionless">2</cn>
+							<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#" cellml:units="dimensionless">2</cn>
 						</apply>
 						<apply>
 							<power />
 							<ci>y</ci>
-							<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#"
-                    cellml:units="dimensionless">2</cn>
+							<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#" cellml:units="dimensionless">2</cn>
 						</apply>
 					</apply>
 				</apply>

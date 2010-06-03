@@ -2,12 +2,9 @@
 <model xmlns="http://www.cellml.org/cellml/1.1#" name="SimpleDAE_NonLinear4_3">
 	<component name="environment">
 		<variable name="t" public_interface="out" units="dimensionless" />
-		<variable initial_value="1e-10" name="epsilon"
-			public_interface="out" units="dimensionless" />
-		<variable initial_value="5" name="amplitude"
-			public_interface="out" units="dimensionless" />
-		<variable initial_value="0.78" name="initial_t"
-			public_interface="out" units="dimensionless" />
+		<variable initial_value="1e-10" name="epsilon" public_interface="out" units="dimensionless" />
+		<variable initial_value="5" name="amplitude" public_interface="out" units="dimensionless" />
+		<variable initial_value="0.78" name="initial_t" public_interface="out" units="dimensionless" />
 	</component>
 	<connection>
 		<map_components component_1="environment" component_2="main" />
@@ -17,11 +14,9 @@
 		<map_variables variable_1="initial_t" variable_2="initial_t" />
 	</connection>
 	<component name="main">
-		<variable initial_value="y_initial" name="y"
-			public_interface="out" units="dimensionless" />
+		<variable initial_value="y_initial" name="y" public_interface="out" units="dimensionless" />
 		<variable name="d" units="dimensionless" />
-		<variable initial_value="x_initial" name="x"
-			public_interface="out" units="dimensionless" />
+		<variable initial_value="x_initial" name="x" public_interface="out" units="dimensionless" />
 		<variable name="epsilon" public_interface="in" units="dimensionless" />
 		<variable name="amplitude" public_interface="in" units="dimensionless" />
 		<variable name="y_initial" units="dimensionless" />
@@ -45,8 +40,7 @@
 					<apply>
 						<power />
 						<ci>d</ci>
-						<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#"
-                    cellml:units="dimensionless">3</cn>
+						<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#" cellml:units="dimensionless">3</cn>
 					</apply>
 					<apply>
 						<times />
@@ -73,14 +67,12 @@
 				<eq />
 				<apply>
 					<times />
-					<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#"
-                    cellml:units="dimensionless">2</cn>
+					<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#" cellml:units="dimensionless">2</cn>
 					<apply>
 						<plus />
 						<apply>
 							<times />
-							<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#"
-                    cellml:units="dimensionless">-1</cn>
+							<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#" cellml:units="dimensionless">-1</cn>
 							<ci>x</ci>
 						</apply>
 						<apply>
@@ -88,8 +80,7 @@
 							<apply>
 								<power />
 								<ci>d</ci>
-								<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#"
-                    cellml:units="dimensionless">3</cn>
+								<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#" cellml:units="dimensionless">3</cn>
 							</apply>
 							<apply>
 								<times />
@@ -99,8 +90,7 @@
 						</apply>
 					</apply>
 				</apply>
-				<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#"
-                    cellml:units="dimensionless">0</cn>
+				<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#" cellml:units="dimensionless">0</cn>
 			</apply>
 			<apply id="3.3.3">
 				<eq />
