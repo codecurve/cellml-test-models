@@ -45,7 +45,8 @@
 					<apply>
 						<power />
 						<ci>d</ci>
-						<cn>3</cn>
+						<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#"
+                    cellml:units="dimensionless">3</cn>
 					</apply>
 					<apply>
 						<times />
@@ -72,12 +73,14 @@
 				<eq />
 				<apply>
 					<times />
-					<cn>2</cn>
+					<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#"
+                    cellml:units="dimensionless">2</cn>
 					<apply>
 						<plus />
 						<apply>
 							<times />
-							<cn>-1</cn>
+							<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#"
+                    cellml:units="dimensionless">-1</cn>
 							<ci>x</ci>
 						</apply>
 						<apply>
@@ -85,7 +88,8 @@
 							<apply>
 								<power />
 								<ci>d</ci>
-								<cn>3</cn>
+								<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#"
+                    cellml:units="dimensionless">3</cn>
 							</apply>
 							<apply>
 								<times />
@@ -95,7 +99,8 @@
 						</apply>
 					</apply>
 				</apply>
-				<cn>0</cn>
+				<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#"
+                    cellml:units="dimensionless">0</cn>
 			</apply>
 			<apply id="3.3.3">
 				<eq />
