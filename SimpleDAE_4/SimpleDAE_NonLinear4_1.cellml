@@ -1,24 +1,61 @@
 <?xml version="1.0"?>
-<model xmlns="http://www.cellml.org/cellml/1.1#"  >
+<model xmlns="http://www.cellml.org/cellml/1.1#" name="SimpleDAE_NonLinear4_1">
 	<component name="environment">
-		<variable name="t" public_interface="out" units="dimensionless"/>
-        <variable initial_value="5" name="amplitude" public_interface="out" units="dimensionless"/>
-        <variable initial_value="0.78" name="initial_t" public_interface="out" units="dimensionless"/>
-    </component>
-    <connection>
-        <map_components component_1="environment" component_2="main"/>
-        <map_variables variable_1="t" variable_2="t"/>
-        <map_variables variable_1="amplitude" variable_2="amplitude"/>
-    </connection>
+		<variable name="t" public_interface="out" units="dimensionless" />
+		<variable initial_value="5" name="amplitude"
+			public_interface="out" units="dimensionless" />
+		<variable initial_value="0.78" name="initial_t"
+			public_interface="out" units="dimensionless" />
+	</component>
+	<connection>
+		<map_components component_1="environment" component_2="main" />
+		<map_variables variable_1="t" variable_2="t" />
+		<map_variables variable_1="amplitude" variable_2="amplitude" />
+	</connection>
 	<component name="main">
-		<variable name="y" public_interface="out" units="dimensionless"/>
-		<variable name="x" public_interface="out" units="dimensionless"/>
-		<variable name="t" public_interface="in" units="dimensionless"/>
-	    <variable name="amplitude" public_interface="in" units="dimensionless"/>
+		<variable name="y" public_interface="out" units="dimensionless" />
+		<variable name="x" public_interface="out" units="dimensionless" />
+		<variable name="t" public_interface="in" units="dimensionless" />
+		<variable name="amplitude" public_interface="in" units="dimensionless" />
 		<math xmlns="http://www.w3.org/1998/Math/MathML" id="3.1">
-			<apply id="3.1.1"><eq/><ci>x</ci><apply><times/><ci>amplitude</ci><apply><cos/><ci>t</ci></apply></apply></apply>
-			<apply id="3.1.2"><eq/><ci>y</ci><apply><times/><ci>amplitude</ci><apply><sin/><ci>t</ci></apply></apply></apply>
-		<apply><eq/><apply><diff/><bvar><ci>t</ci></bvar><ci>dummy</ci></apply><cn>1</cn></apply></math>
-	<variable name="dummy" units="dimensionless"/></component>
-	
+			<apply id="3.1.1">
+				<eq />
+				<ci>x</ci>
+				<apply>
+					<times />
+					<ci>amplitude</ci>
+					<apply>
+						<cos />
+						<ci>t</ci>
+					</apply>
+				</apply>
+			</apply>
+			<apply id="3.1.2">
+				<eq />
+				<ci>y</ci>
+				<apply>
+					<times />
+					<ci>amplitude</ci>
+					<apply>
+						<sin />
+						<ci>t</ci>
+					</apply>
+				</apply>
+			</apply>
+			<apply>
+				<eq />
+				<apply>
+					<diff />
+					<bvar>
+						<ci>t</ci>
+					</bvar>
+					<ci>dummy</ci>
+				</apply>
+				<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#"
+					cellml:units="dimensionless">1</cn>
+			</apply>
+		</math>
+		<variable name="dummy" units="dimensionless" />
+	</component>
+
 </model>
