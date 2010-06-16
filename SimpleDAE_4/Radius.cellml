@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<model xmlns="http://www.cellml.org/cellml/1.1#" name="Radius">
+	<component name="Radius">
+		<variable name="x" public_interface="in" units="dimensionless" />
+		<variable name="y" public_interface="in" units="dimensionless" />
+		<variable name="r" public_interface="out" units="dimensionless" />
+		<math xmlns="http://www.w3.org/1998/Math/MathML">
+			<apply>
+				<eq />
+				<ci>r</ci>
+				<apply>
+					<root />
+					<apply>
+						<plus />
+						<apply>
+							<power />
+							<ci>x</ci>
+							<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#" cellml:units="dimensionless">2</cn>
+						</apply>
+						<apply>
+							<power />
+							<ci>y</ci>
+							<cn xmlns:cellml="http://www.cellml.org/cellml/1.1#" cellml:units="dimensionless">2</cn>
+						</apply>
+					</apply>
+				</apply>
+			</apply>
+		</math>
+	</component>
+</model>
