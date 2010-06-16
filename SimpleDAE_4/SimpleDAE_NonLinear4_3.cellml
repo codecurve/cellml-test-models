@@ -14,9 +14,9 @@
 		<map_variables variable_1="initial_t" variable_2="initial_t" />
 	</connection>
 	<component name="main">
-		<variable initial_value="0" name="y" public_interface="out" units="dimensionless" />
+		<variable initial_value="y_initial" name="y" public_interface="out" units="dimensionless" />
 		<variable name="d" units="dimensionless" />
-		<variable initial_value="5" name="x" public_interface="out" units="dimensionless" />
+		<variable initial_value="x_initial" name="x" public_interface="out" units="dimensionless" />
 		<variable name="epsilon" public_interface="in" units="dimensionless" />
 		<variable name="amplitude" public_interface="in" units="dimensionless" />
 		<variable name="y_initial" units="dimensionless" />
