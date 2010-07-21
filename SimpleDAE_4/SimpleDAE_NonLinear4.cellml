@@ -2,7 +2,7 @@
 <model xmlns="http://www.cellml.org/cellml/1.1#" xmlns:cmeta="http://www.cellml.org/metadata/1.0#" cmeta:id="SimpleDAE_NonLinear4" name="SimpleDAE_NonLinear4">
 	<component name="environment">
 		<variable name="t" public_interface="out" units="dimensionless" />
-		<variable initial_value="1e-10" name="epsilon" public_interface="out" units="dimensionless" />
+		<variable initial_value="1e-3" name="epsilon" public_interface="out" units="dimensionless" />
 		<variable initial_value="5" name="amplitude" public_interface="out" units="dimensionless" />
 		<variable initial_value="0.78" name="initial_t" public_interface="out" units="dimensionless" />
 	</component>
